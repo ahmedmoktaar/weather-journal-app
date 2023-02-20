@@ -1,0 +1,125 @@
+/*  Basic Styling To Override Default For Basic HTML Elements */
+body{
+    margin: 0 .5rem;
+    height: 100vh;
+    font-family: cursive, monospace, sans-serif;
+    background-image: url(https://images.pexels.com/photos/1431822/pexels-photo-1431822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+label{
+    display:block;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    width: max-content;
+    background-color: rgba(185, 220, 235, 0.65);
+}
+
+input{
+    height: 2.3rem;
+    width: 24rem;
+    font-size: 1.6rem;
+    background:#0a3147;
+    color: #f0d43a;
+    border: none;
+}
+
+button{
+    margin-left: 7rem;
+    width: 10rem;
+    height: 4rem;
+    font-size: 2rem;
+    border: none;
+    box-shadow: 2px 4px 5px #444;
+    font-family: monospace, sans-serif;    
+    background: #3b4a6b;
+    color: #f0d43a;
+}
+
+textarea{
+    font-size: 1.5rem;
+    background:#0a3147;
+    color: #f0d43a;
+}
+
+
+
+/* style by classes and id */
+.headline {
+    font-size: 2.8rem;
+    color: #f0d43a;
+}
+
+#container{
+    margin: 1.1rem;
+    display: grid;
+    grid-auto-rows: max-content;
+    row-gap: 0.6rem;
+    justify-content: center;
+}
+
+.result{
+    font-size: 1.7rem;
+    background: rgba(59, 74, 107, .4);
+    overflow: scroll;
+    white-space: nowrap;
+    width: 25rem;
+}
+
+
+
+/* special style for HTML elements */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline-style: solid ;
+    outline: rgb(255, 255, 255);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+
+/* media query for mobile size */
+@media only screen and (max-width: 475px) {
+    label {
+    font-size: 1rem;
+    }
+
+    input {
+        height: 1.5rem;
+        width: 13rem;
+        font-size: 0.9rem;
+    } 
+
+    textarea{
+        font-size: 0.9rem;
+        width: 13rem;
+    }  
+
+    button{
+        width: 6rem;
+        height: 3rem;
+        font-size: 1.1rem;
+        margin-left: 4.1rem;
+    }
+    #container {
+        margin-top: 2rem;
+    }
+
+    .headline {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        justify-content: center;
+    }
+    
+    .result {
+        font-size: 1rem;
+        width: 13rem;
+    }
+  }
+
